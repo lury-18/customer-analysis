@@ -1,0 +1,10 @@
+Open the database server first:
+C:/Users/92503/Desktop/Temp/dsa3101-class.pem -L 3306:localhost:3306 -N -f dsa3101@13.251.201.156
+
+
+cd "C:/Users/92503/Desktop/AY2021-22 S2/DSA3101/Project/Order Filter"
+$env:FLASK_APP = "order_filter"
+flask run
+
+Can try this in browser:
+http://127.0.0.1:5000/orders?start_time=2017-02-28&end_time=2017-03-15&status=delivered

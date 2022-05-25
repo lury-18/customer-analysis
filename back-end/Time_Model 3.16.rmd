@@ -1,0 +1,30 @@
+---
+title: "Time_Model 3.16"
+author: "Wu Shangzhe/A0194505A"
+date: "2022/3/16"
+output: html_document
+---
+
+```{r, include=FALSE}
+data <- read.csv("time_temp.csv")
+attach(data)
+```
+
+```{r}
+data1 <- head(data,4000)
+```
+
+```{r cars}
+model1 <- lm(time ~ seller, data = data1)
+summary(model1)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
